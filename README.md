@@ -1,4 +1,4 @@
-# Module-1-Project
+# Project-Week-1
 NTU SGUS Module 1 Project
 
 A calculator / form that calculates how much to feed your pet
