@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Calculator</title>
+    <script defer src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Calculate how much to feed your pet!</h1>
+    <form action="">
+        <div>
+            My pet's name is
+            <label for="name"></label>
+            <input type="text" id="name" value="name"> 
+        </div>
+
+        <div id="pet-questions" class="pet-questions">and
+            <label for="petGender"></label>
+            <select name="gender" id="petGender" class="dropdown">
+                <option value="">he/she</option>
+                <option value="he">he</option>
+                <option value="she">she</option>
+            </select> is a 
+            <label for="petType"></label>
+            <select name="pet" id="petType" class="petType">
+                <option value="">dog/cat</option>
+                <option value="she">dog</option>
+                <option value="she">cat</option>
+            </select>
+        </div>
+
+        <div id="pet-questions" class="pet-questions">
+            <label for="petName"></label>
+            <span id="petName" class=petName></span> weighs 
+                <input id="petWeight" class="petWeight" pattern="[0-9]*" inputmode="numeric" placeholder="0" name="age" aria-label="age" aria-describedby="age" maxlength="2" type="text" lang="en-150" value="2" style="width: 50px;"> kg and is the
+            <label for="petPersonality"></label>
+            <select name="personality" id="petPersonality" class="petPersonality">
+                <option value="cutest">cutest</option>
+                <option value="naughtiest">naughtiest</option>
+                <option value="funniest">funniest</option>
+                <option value="pickiest">pickiest</option>
+            </select> 
+        
+            <label for="petBreed"></label>
+            <select name="breed" id="petBreed" class="petBreed" onmousedown="if(this.options.length>5){this.size=5;}" onchange="this.blur()"  onblur="this.size=0;">
+                <option value="Singapore Special">Singapore Special</option>
+                <option value="Mixed Breed">Mixed Breed</option>
+                <option value="Toy Poodle">Toy Poodle</option>
+                <option value="Shih Tzu">Shih Tzu</option>
+                <option value="Mini Schnauzer">Mini Schnauzer</option>
+                <option value="Maltese">Maltese</option>
+                <option value="Jack Russell Terrier">Jack Russell Terrier</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="Pomeranian">Pomeranian</option>
+                <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+                <option value="Dachshund">Dachshund</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Pug">Pug</option>
+                <option value="Maltipoo">Maltipoo</option>
+                <option value="French Bulldog">French Bulldog</option>
+                <option value="Border Collie">Border Collie</option>
+                <option value="Rottweiler">Rottweiler</option>
+                <option value="Silky Terrier">Silky Terrier</option>
+                <option value="Beagle">Beagle</option>
+            </select>
+        </div>
+        
+        <div id="pet-questions" class="pet-questions">
+            <label for="petName"></label>
+            <span id="petName" class=petName></span><p>'s body currently looks like...</p>
+            <div id="bcs-group" class="bcs-group">
+                <label class="radio-label" for="radio-bcs1">
+                    <input id="radio-bcs1" type="radio" name="radio-bcs" class="radio" value="1" checked>
+                    <img class="radio-image" src="./images/Colour-1-rev4.png">
+                </label>
+                <label class="radio-label" for="radio-bcs2">
+                    <input id="radio-bcs2" type="radio" name="radio-bcs" class="radio" value="2">
+                    <img class="radio-image" src="./images/Colour-2-rev4.png">
+                </label>
+                <label class="radio-label" for="radio-bcs3">
+                    <input id="radio-bcs3" type="radio" name="radio-bcs" class="radio" value="3">
+                    <img for="radio-bcs3" class="radio-image" src="./images/Colour-3-rev4.png">
+                </label>
+                <label class="radio-label" for="radio-bcs4">
+                    <input id="radio-bcs4" type="radio" name="radio-bcs" class="radio" value="4">
+                    <img class="radio-image" src="./images/Colour-4-rev2.png">
+                </label>
+                <label class="radio-label" for="radio-bcs5">
+                    <input id="radio-bcs5" type="radio" name="radio-bcs" class="radio" value="5">
+                    <img class="radio-image" src="./images/Colour-5-rev2.png">
+                </label>
+            </div>
+        </div>
+        
+        <input type="radio" name="season" id="summer" value="Summer"> Summer <br>   
+        <input type="radio" name="season" id="winter" value="Winter"> Winter <br>   
+        <input type="radio" name="season" id="rainy" value="Rainy"> Rainy <br>  
+        <input type="radio" name="season" id="autumn" value="Autumn"> Autumn   
+        <br><br>       
+          
+        <button type="button" onclick=" checkButton()"> Submit </button>   
+              
+        <h3 id="disp" style= "color:green"> </h3>  
+        <h4 id="error" style= "color:red"> </h4>  
+
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+   
+</body>
+</html>

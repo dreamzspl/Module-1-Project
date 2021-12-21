@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Calculator</title>
+    <script defer src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Calculate how much to feed your pet!</h1>
+    <form action="">
+        <div>
+          My pet's name is
+          <label for="name"></label>
+          <input type="text" id="name" value="name"> 
+        </div>
+          
+        <div class="dropdown">and
+          <label for="genderList"></label>
+          <button type="button" class="dropdownButton" id="genderList" aria-haspopup="listbox" aria-expanded="false" aria-controls="genderList">he
+            <div class="selectFromToggle">
+              <svg width="20px" height="20px" viewBox="0 0 44 44" version="1.1" style="transform: rotate(0deg);">
+                  <polygon fill-rule="nonzero" points="19.8767795 32.1232205 0.761156288 14.5604071 4.8205453 10.1421087 22 25.9260334 39.1794547 10.1421087 43.2388437 14.5604071 24.1232205 32.1232205 22.1794547 34.2388437 22 34.0739666 21.8205453 34.2388437"></polygon>
+              </svg>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <ul role="listbox" aria-labelledby="genderList" tabindex="-1">
+              <li class="init" role="none">he</li>
+              <li role="none">she</li>
+            </ul>
+          </div>
+          
+          
+        </div>is a
+        <div class="dropdown">
+          <button type="button" class="dropdownButton" id="petList" aria-haspopup="listbox" aria-expanded="false" aria-controls="petList"></button>
+          <div>dog
+            <ul id="petList" role="listbox" aria-labelledby="petList" tabindex="-1" class="ulSelectDropdown">
+              <li role="none">dog</li>
+              <li role="none">cat</li>
+            </ul>
+          </div>
+          <div class="selectFromToggle">
+            <svg width="20px" height="20px" viewBox="0 0 44 44" version="1.1" style="transform: rotate(0deg);">
+              <polygon fill-rule="nonzero" points="19.8767795 32.1232205 0.761156288 14.5604071 4.8205453 10.1421087 22 25.9260334 39.1794547 10.1421087 43.2388437 14.5604071 24.1232205 32.1232205 22.1794547 34.2388437 22 34.0739666 21.8205453 34.2388437"></polygon>
+            </svg>
+          </div>
+        </div>
+        <div>
+            <span class=petName></span> weighs 
+            <input class="petWeight" pattern="[0-9]*" inputmode="numeric" placeholder="0" name="age" aria-label="age" aria-describedby="age" maxlength="2" type="text" lang="en-150" value="2" style="width: 50px;"> kg and is the <button type="button" class="dropdownButton" id="traitList" aria-haspopup="listbox" aria-expanded="false" aria-controls="traitList">
+                <div>naughtiest
+                    <ul id="traitList" role="listbox" aria-labelledby="traitList" tabindex="-1" class="ulSelectDropdown">
+                        <li role="none">naughtiest</li>
+                        <li role="none">funniest</li>
+                        <li role="none">cutest</li>
+                    </ul>
+                </div>
+                <div class="selectFromToggle">
+                    <svg width="20px" height="20px" viewBox="0 0 44 44" version="1.1" style="transform: rotate(0deg);">
+                        <polygon fill-rule="nonzero" points="19.8767795 32.1232205 0.761156288 14.5604071 4.8205453 10.1421087 22 25.9260334 39.1794547 10.1421087 43.2388437 14.5604071 24.1232205 32.1232205 22.1794547 34.2388437 22 34.0739666 21.8205453 34.2388437"></polygon>
+                    </svg>
+                </div>
+            </button> furbaby ever.          
+        </div>
+        <div>
+            
+        </div>
+    </form>
+    
+
+
+
+
+
+
+
+
+<!-- https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html -->
+    <div class="menu_button">
+        <button id="menubutton"
+                aria-haspopup="true"
+                aria-controls="menu2">
+          WAI-ARIA Quick Links
+        </button>
+        <ul id="menu2"
+            role="menu"
+            aria-labelledby="menubutton">
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/">
+              W3C Home Page
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/standards/webdesign/accessibility">
+              W3C Web Accessibility Initiative
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/TR/wai-aria/">
+              Accessible Rich Internet Application Specification
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/TR/wai-aria-practices/">
+              WAI-ARIA Authoring Practices
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/TR/wai-aria-implementation/">
+              WAI-ARIA Implementation Guide
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem" href="https://www.w3.org/TR/accname-aam-1.1/">
+              Accessible Name and Description
+            </a>
+          </li>
+        </ul>
+        <!-- <script type="text/javascript">
+          window.onload=function() {
+          var menubutton = new Menubutton(document.getElementById('menubutton'));
+          menubutton.init();
+        </script> -->
+      </div>
+    
+</body>
+</html>
